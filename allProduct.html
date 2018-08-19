@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>萌舒樂 | 精選商品</title>
+	
+	<link rel="Shortcut Icon" type="image/x-icon" href="./image/Logo1.png"/>
+	<link rel="stylesheet" type="text/css" href="./css_website/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css_website/allProduct.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="fontFam">
+	<div class="barSpace"></div>
+	<div class="mobBar des_hidden">		
+		<div class="mobLogo">
+			<a href="index.html"><img src="./image/mob_logo.png"></a>
+		</div>
+		<div class="mobCart">
+			<label class="hambeger" for="hamList">
+				<img src="image/menuOpen.png">
+			</label>
+			<a href="#">
+				<img src="./image/cart2.png">
+			</a>
+			<div class="clearfix"></div>
+		</div>
+		<!-- <div class="clearfix"></div> -->
+	</div>
+	
+	<input type="checkbox" id="hamList">
+		<ul class="hamNav des_hidden fontFam">
+			<li>
+				<a href="grooming.html">
+					<i class="fa fa-scissors" aria-hidden="true">
+						<span class="fontFam"> 寵物美容 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="hotelEnvi.html">
+					<i class="fa fa-home" aria-hidden="true">
+						<span class="fontFam"> 寵物旅館 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="allProduct.html">
+					<i class="fa fa-shopping-bag" aria-hidden="true">
+						<span class="fontFam"> 寵物商品 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="coffeeShop.html">
+					<i class="fa fa-coffee" aria-hidden="true">
+						<span class="fontFam"> 門市資訊 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-bullhorn" aria-hidden="true">
+						<span class="fontFam"> 最新資訊 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-user" aria-hidden="true">
+						<span class="fontFam"> 會員專區 </span>
+					</i>
+				</a>
+			</li>
+		</ul>
+
+	
+
+
+
+
+	<div class="menu mob_hidden">
+		<div class="menubar">
+			<div class="col-des-6 logoArea">
+				<div class="logoPic">
+					<a href="./index.html"><img src="./image/Logo1.png" alt="商標圖片" title="萌舒樂商標" ></a>
+				</div>
+				<a class="chiName" href="./index.html"><header>萌舒樂<span>寵物美容咖啡廳</span></header></a>	
+			</div>
+			<div class="col-des-6">
+				<div class="memberCart">
+					<a href="#">
+						<i class="fa fa-user-circle-o" aria-hidden="true"><span class="fontFam"> 會員專區 </span></i>  
+					</a>
+					<a href="#">
+						<i class="fa fa-shopping-cart" aria-hidden="true"><span class="fontFam"> 購物車 </span></i>
+					</a>
+				</div>
+				<nav>
+					<ul class="mainMenu">
+						<li>
+							<a href="grooming.html">寵物美容</a>
+							<ul class="subMenu">
+								<li><a href="spaItem.html">美容項目</a></li>
+								<li><a href="#">美容師群</a></li>
+								<li><a href="spa_reservation.html">預約美容</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="hotelEnvi.html">寵物旅館</a>
+							<ul class="subMenu">
+								<li><a href="hotelType.html">套房款式</a></li>
+								<li><a href="#">安親服務</a></li>
+								<li><a href="hotel_reservation.html">預約住宿</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">寵物商品</a>
+							<ul class="subMenu">
+								<li><a href="allProduct.html">精選商品</a></li>
+								<li><a href="#">貓咪商品</a></li>
+								<li><a href="#">小狗商品</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="coffeeShop.html">門市資訊</a>
+							<ul class="subMenu">
+								<li><a href="coffeeShop.html">咖啡點心</a></li>
+							<!-- 	<li><a href="">新北門市</a></li>
+								<li><a href="">台中門市</a></li> -->
+							</ul>
+						</li>
+						<li>
+							<a href="#">最新資訊</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="container_960">
+		<div class="breadcrumbArea fontFam">
+			<ul class="breadcrumb">
+			  <li><a href="./index.html">萌舒樂</a></li>
+			  <li><a href="./allProduct.html">寵物商品</a></li>
+			  <li>精選商品</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container_960">
+		<div class="col-des-12-no col-mob-12-no tab">
+			<button class="tabLink fontFam" onclick="openProduct(event, 'allProduct')" id="defaultOpen">精選產品</button>
+			<button class="tabLink fontFam" onclick="openProduct(event, 'dogProduct')">小狗產品</button>
+			<button class="tabLink fontFam" onclick="openProduct(event, 'catProduct')">貓咪產品</button>
+		</div>
+
+		<div class="tabContent col-des-12" id="allProduct">
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$299</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬成長羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>		
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>		
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$213</p>
+				</a>
+			</div>
+			
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬配方羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="tabContent col-des-12" id="dogProduct">
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$299</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬成長羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>		
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>		
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$213</p>
+				</a>
+			</div>
+			
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬配方羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="tabContent col-des-12" id="catProduct">
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$299</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬成長羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>		
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>		
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">
+					<figure>
+						<img src="./image/product2.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>AIM CREATE</figcaption>
+					<h3>貓頭造型貓抓板條紋款</h3>
+					<p>$792</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="productDetail.html">	
+					<figure>
+						<img src="./image/product1.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>Hagen</figcaption>
+					<h3>毛孩淘寶飼料球-藍色</h3>
+					<p>$213</p>
+				</a>
+			</div>
+			
+			<div class="clearfix des_hidden"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product3.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>優格</figcaption>
+					<h3>幼犬配方羊肉+米7公斤</h3>
+					<p>$961</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product6.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE CAT</figcaption>
+					
+					<h3>組合式鈴鐺帶球貓抓板</h3>
+					<p>$390</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product7.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>VUUM</figcaption>
+					<h3>攜帶式寵物箱L-咖啡色</h3>
+					<p>$8000</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product4.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>紐崔斯</figcaption>
+					<h3>幼母犬雞肉糙米2.5公斤</h3>
+					<p>$711</p>
+				</a>
+			</div>
+			<div class="clearfix des_hidden"></div>
+			
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product8.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>LOVE DOG</figcaption>
+					<h3>小型犬自動伸縮牽繩-粉紅</h3>
+					<p>$4600</p>
+				</a>
+			</div>
+			<div class="col-des-3 col-mob-6 productPic">
+				<a href="#">	
+					<figure>
+						<img src="./image/product5.jpg" alt="產品圖片">
+					</figure>
+					<figcaption>WELLNESS</figcaption>
+					<h3>貓無穀深海魚食譜2磅</h3>
+					<p>$600</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="pageNumber col-des-12 col-mob-12">
+			<ul>
+				<li><a class="page1" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<footer>
+		<div class="col-des-12 col-mob-12 footerAdd">
+			<a href="#">
+				<img src="./image/EngLogo.png">
+			</a>
+			
+				<h2><a href="index.html">萌舒樂寵物美容咖啡廳</a></h2>
+			
+<!-- 			<p>台北門市｜ 台北市大安區中大路300號｜ 02-1234-0000</p>
+			<p>新北門市｜ 新北市大安區中大路300號｜ 02-1234-0000</p>
+			<p>台中門市｜ 台中市大安區中大路300號｜ 04-1234-0000</p> -->
+		</div>
+		<div class="clearfix"></div>
+		<div>
+			<div class="col-des-6 footerNav">
+				<ul>
+					<li><a href="grooming.html">寵物美容</a></li>
+					<li><a href="hotelEnvi.html">寵物旅館</a></li>
+					<li><a href="allProduct.html">寵物商品</a></li>
+					<li><a href="coffeeShop.html">門市資訊</a></li>
+					<!-- <li><a href="#">最新資訊</a></li> -->
+					</ul>
+			</div>
+			<div class="col-des-6 privacy">
+				<ul>
+					<li><a href="#">網站使用條款</a></li>
+					<li><a href="#">隱私權政策</a></li>
+					<li> ©2017 Mong Sulo All Rights Reserved.</li>
+					</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+	
+	<script>
+		function openProduct(evt, tabName) {
+		    var i, tabContent, tabLink;
+		    tabContent = document.getElementsByClassName("tabContent");
+		    for (i = 0; i < tabContent.length; i++) {
+		        tabContent[i].style.display = "none";
+		    }
+		    tabLink = document.getElementsByClassName("tabLink");
+		    for (i = 0; i < tabLink.length; i++) {
+		        tabLink[i].className = tabLink[i].className.replace(" active", "");
+		    }
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+				
+		document.getElementById("defaultOpen").click();
+	</script>
+	
+</body>
+</html>

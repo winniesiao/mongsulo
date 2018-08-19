@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<title>MongSulo萌舒樂寵物美容咖啡廳</title>
+	
+	<link rel="Shortcut Icon" type="image/x-icon" href="./image/Logo1.png"/>
+	<link rel="stylesheet" type="text/css" href="./css_website/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css_website/index.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="fontFam">
+	<div class="barSpace"></div>
+	<div class="mobBar des_hidden">		
+		<div class="mobLogo">
+			<a href="index.html"><img src="./image/mob_logo.png"></a>
+		</div>
+		<div class="mobCart">
+			<label class="hambeger" for="hamList">
+				<img src="image/menuOpen.png">
+			</label>
+			<a href="#">
+				<img src="./image/cart2.png">
+			</a>
+			<div class="clearfix"></div>
+		</div>
+		<!-- <div class="clearfix"></div> -->
+	</div>
+	
+	<input type="checkbox" id="hamList">
+		<ul class="hamNav des_hidden fontFam">
+			<li>
+				<a href="grooming.html">
+					<i class="fa fa-scissors" aria-hidden="true">
+						<span class="fontFam"> 寵物美容 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="hotelEnvi.html">
+					<i class="fa fa-home" aria-hidden="true">
+						<span class="fontFam"> 寵物旅館 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="allProduct.html">
+					<i class="fa fa-shopping-bag" aria-hidden="true">
+						<span class="fontFam"> 寵物商品 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="coffeeShop.html">
+					<i class="fa fa-coffee" aria-hidden="true">
+						<span class="fontFam"> 門市資訊 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-bullhorn" aria-hidden="true">
+						<span class="fontFam"> 最新資訊 </span>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-user" aria-hidden="true">
+						<span class="fontFam"> 會員專區 </span>
+					</i>
+				</a>
+			</li>
+		</ul>
+
+	
+
+
+
+
+	<div class="menu mob_hidden">
+		<div class="menubar">
+			<div class="col-des-6 logoArea">
+				<div class="logoPic">
+					<a href="./index.html"><img src="./image/Logo1.png" alt="商標圖片" title="萌舒樂商標" ></a>
+				</div>
+				<a class="chiName" href="./index.html"><header>萌舒樂<span>寵物美容咖啡廳</span></header></a>	
+			</div>
+			<div class="col-des-6">
+				<div class="memberCart">
+					<a href="#">
+						<i class="fa fa-user-circle-o" aria-hidden="true"><span class="fontFam"> 會員專區 </span></i>  
+					</a>
+					<a href="#">
+						<i class="fa fa-shopping-cart" aria-hidden="true"><span class="fontFam"> 購物車 </span></i>
+					</a>
+				</div>
+				<nav>
+					<ul class="mainMenu">
+						<li>
+							<a href="grooming.html">寵物美容</a>
+							<ul class="subMenu">
+								<li><a href="spaItem.html">美容項目</a></li>
+								<li><a href="#">美容師群</a></li>
+								<li><a href="spa_reservation.html">預約美容</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="hotelEnvi.html">寵物旅館</a>
+							<ul class="subMenu">
+								<li><a href="hotelType.html">套房款式</a></li>
+								<li><a href="#">安親服務</a></li>
+								<li><a href="hotel_reservation.html">預約住宿</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">寵物商品</a>
+							<ul class="subMenu">
+								<li><a href="allProduct.html">精選商品</a></li>
+								<li><a href="#">貓咪商品</a></li>
+								<li><a href="#">小狗商品</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="coffeeShop.html">門市資訊</a>
+							<ul class="subMenu">
+								<li><a href="coffeeShop.html">咖啡點心</a></li>
+							<!-- 	<li><a href="">新北門市</a></li>
+								<li><a href="">台中門市</a></li> -->
+							</ul>
+						</li>
+						<li>
+							<a href="#">最新資訊</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+	<section class="bigSlide">
+		<!-- <div class="container_960"> -->
+			<div class="col-des-12">
+				<div class="slidePart" >
+				 	<a href="spa_reservation.html"><img class="mySlides" src="image/slider1.png" title="點擊預約美容"></a>
+				 	<a href="hotel_reservation.html"><img class="mySlides" src="image/slider2.png" title="點擊預約旅館"></a>
+				 	<a href="allProduct.html"><img class="mySlides" src="image/slider3.png" title="點擊購買商品"></a>
+				</div>
+			</div>
+	</section>
+
+
+	<script>
+		var myIndex = 0;
+		slideAuto();
+
+		function slideAuto() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(slideAuto, 3200); // Change image every 2 seconds
+		}
+	</script>
+
+	<section class="bigSlide1">
+		
+	</section>
+
+
+
+
+
+
+
+
+
+<!-- 	<div class="bigSlide">
+		<div class="">
+			<img src="./image/s001.jpg" alt="宣傳圖片" title="美容宣傳圖片">
+	   		<div class="slideTxt">
+	   			<p>造型美容</p>
+	   			<p>周年慶優惠 截至 1/31</p>
+	   		</div>
+
+	   		<div class="reserve">
+		   		<div>
+		   			<a href="#" target="_self">線上預約</a>
+		   		</div>
+		   		<p>現折100元/次</p>
+	   		</div>
+		   	<div class="slideButton">
+		   		<a href="#"></a>
+		   		<a href="#"></a>
+		   		<a href="#"></a>
+		   	</div>
+	   	</div>
+	</div> -->
+
+
+	<section class="groomingPart">
+		<div class="container_960">
+			<div class="col-des-12 col-mob-12 groomingTitle">
+				<h1>
+					<a href="grooming.html">寵 物 <span> 美 </span> <span> 容 </span></a>
+				</h1>
+			</div>
+			
+			<div class="col-des-6 col-mob-12 groomingEnvi">
+				<div class="enviBorder">
+						<img src="./image/shop1.jpg" alt="美容環境照片" title="美容環境照片">
+				</div>
+			</div>
+			
+			<div class="col-des-6 col-mob-12 groomingTxt">
+				<p class="mob_hidden">萌舒樂為提供萌寶貝與爸爸媽媽們舒適快樂的空間，特別規劃明亮透明的寵物美容空間，讓萌寶貝的爸爸媽媽們在享用美味的咖啡與甜點同時，可以觀察萌寶貝的洗澡美容過程。</p>
+				<p class="mob_hidden">
+				萌舒樂聘請具有專業證照的寵物美容師群，採用純天然的草本洗毛劑，使用進口負離子立式吹乾機與專業紫外線消毒工具，用耐心和愛心與您的萌寶貝培養信任感，絕不施打麻醉鎮定劑， 提供您的萌寶貝最專業最安心最安全的頂級服務。</p>
+				<p class="des_hidden">萌舒樂規劃明亮透明的美容空間，讓主人們享用美味的咖啡與甜點時，可觀察萌寶貝的洗澡美容過程。</p>
+				<p class="des_hidden">具有專業證照的美容師群，採用純天然的草本洗毛劑，用耐心和愛心與寶貝培養信任感，提供最專業安心安全的頂級服務。</p>
+			</div>
+
+			<div class="clearfix"></div>
+		
+			<div class="groomingItem">
+				<div class="col-des-4 col-mob-12">
+					<div class="clean">
+						<a href="spaItem.html" class="groomingLink">
+							<div class="groomPic">
+								<img src="./image/beauty1.png" alt="深層清潔照片" title="深層清潔">
+							</div>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<h2>深 層 清 潔</h2>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<p>
+								<span>服務項目</span>
+								<span>洗澡、剃底毛、臀部毛</span>
+								<span>肛門腺、耳朵毛、修指甲</span>
+							</p>
+						</a>
+						<a href="spa_reservation.html" class="groomingBtn">立即預約</a>					
+					</div>
+				</div>
+
+				<div class="col-des-4 col-mob-12">
+					<div class="beauty">
+						<a href="spaItem.html" class="groomingLink">
+							<div class="groomPic">
+								<img src="./image/beauty2.jpg" alt="造型美容照片" title="造型美容">
+							</div>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<h2>造 型 美 容</h2>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<p>
+								<span>服務項目</span>
+								<span>指定特殊圖案、手修全身</span> 
+								<span>局部挑染、修剪特殊造型</span>
+							</p>
+						</a>
+						<a href="spa_reservation.html" class="groomingBtn">立即預約</a>
+					</div>
+				</div>
+
+				<div class="col-des-4 col-mob-12">
+					<div class="hairCut">
+						<a href="spaItem.html" class="groomingLink">
+							<div class="groomPic">
+								<img src="./image/beauty3.jpg" alt="修剪毛髮照片" title="修剪毛髮">
+							</div>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<h2>修 剪 毛 髮</h2>
+							<img class="footIcon" src="./image/icon/footprint1.png" alt="footicon">
+							<p>
+								<span>服務項目</span>
+								<span>精緻修剪造型</span>
+								<span>修短指定部位毛髮</span>
+							</p>
+						</a>
+						<a href="spa_reservation.html" class="groomingBtn">立即預約</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="hotelPart">
+		<div class="container_960">
+			<div class="col-des-12 col-mob-12 hotelTitle">
+				<h1>
+					<a href="hotelEnvi.html">寵 物 <span> 旅 </span> <span> 館 </span></a>
+				</h1>
+			</div>
+			
+
+			<div class="col-des-6 col-mob-12 hotelEnvi">
+				<div class="enviBorder">
+					<img src="./image/shop3.jpg" alt="旅館照片" title="旅館照片">
+				</div>				
+			</div>
+			<div class="col-des-6 col-mob-12 hotelTxt">
+					<p class="mob_hidden">萌舒樂提供全年無休、24小時照顧萌寶貝的旅館服務。每位入住的寶貝都有獨立的房間，狗寶貝的房間是特製的溫馨小木屋，裝置落地的10mm厚的強化玻璃門；貓寶貝的房間獨立於狗寶貝的區域，特製多層跳台，讓貓寶貝可以伸展筋骨。</p>
+					<p class="mob_hidden">
+					園配中央空調調節溫度及濕度，透過換氣系統，抽換戶外新鮮空氣，維持室內空氣流通。臭氧循環空氣清淨機24小時運轉，提供乾淨無臭的清淨空氣。</p>
+					<p class="des_hidden">
+					萌舒樂提供全年24小時旅館服務，每位寶貝都有自己獨立的房間，狗寶貝房間是特製的溫馨小木屋，而貓寶貝房間有特製多層跳台，讓貓寶貝可以伸展筋骨。</p>
+					<p class="des_hidden">配有中央空調調節溫度及濕度，臭氧循環空氣清淨機24小時運轉，提供乾淨無臭的清淨空氣，讓您的寶貝住得安心又安全。</p>
+			</div>
+			<div class="clearfix"></div>
+
+
+			<div class="hotelItem">			
+				<div class="col-des-6">
+					<div class="hotelService1">
+						<figure>
+							<img src="./image/shop4.jpg" alt="與寵物互動零距離">
+						</figure>
+						<div class="txtBox1">
+							<h3>與萌寶貝互動零距離</h3>
+							<p class="mob_hidden">專業的寵物照護師了解不同種類寵物的習性。懂得萌寶貝到陌生環境容易緊張，會針對不同種類提供不同的安撫方式，像是透過撫摸、注視等溫和方式，與萌寶貝互動愉快，讓您的萌寶貝盡快適應旅館生活。</p>
+							<p class="des_hidden">
+							專業照護師將根據不同種類寵物的習性，提供適合的安撫方式，與萌寶貝互動愉快，讓您的萌寶貝盡快適應旅館生活。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-des-6">
+					<div class="hotelService2">
+						<figure>
+							<img src="./image/shop5.jpg" alt="木製套房">
+						</figure>
+						<div class="txtBox2">
+							<h3>狗寶貝的溫馨木製套房</h3>
+							<p class="mob_hidden">每位入住的萌寶貝都有自己獨立的房間，狗寶貝的房間是經由木工師傅特製的溫馨小木屋，採用無毒無味的特製木材。裝置落地的10mm厚的強化透明玻璃門，可以即時觀察寶貝情況，提供安全又安心的住宿環境。</p>
+							<p class="des_hidden">獨立的溫馨小木屋，採用無毒無味的特製木材。裝置落地的10mm厚的強化透明玻璃門，可即時觀察情況，提供安全又安心的住宿環境。</p>
+						</div>
+					</div>	
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-des-6">
+					<div class="hotelService3">
+						<figure>
+							<img src="./image/shop8.jpg" alt="寵物每天定期活動">
+						</figure>
+						<div class="txtBox3">
+							<h3>狗寶貝每日定時戶外活動</h3>
+							<p class="mob_hidden">由於狗寶貝的活動量較大，所以狗寶貝在住宿的期間中，我們的照護師每日都會在固定時段，攜帶狗寶貝們到公園散步及活動筋骨喔！或是遇到下雨天，也會安排室內空間與玩具，可以讓寶貝活動消耗體力喔！</p>
+							<p class="des_hidden">照護師每日在固定時段，攜帶狗寶貝們到公園散步及活動筋骨喔！若遇下雨，會安排室內空間與玩具讓寶貝活動喔！</p>
+						</div>
+					</div>	
+					
+				</div>
+				<div class="col-des-6">
+					<div class="hotelService4">
+						<figure>
+							<img src="./image/shop2.jpg" alt="貓咪小套房">
+						</figure>
+						<div class="txtBox4">
+							<h3>貓咪專屬的多層跳台套房</h3>
+							<p class="mob_hidden">每位入住的貓寶貝都有屬於自己獨立的房間，並特製多層跳台與抓板，讓貓寶貝可以自由伸展筋骨。 貓寶貝的房間獨立於狗寶貝的區域，避免狗寶貝與貓寶貝之間相處上產生不適應，提供舒適安全的住宿空間。</p>
+							<p class="des_hidden">特製多層跳台與抓板，可伸展筋骨。貓寶貝房間獨立於狗寶貝的區域，避免相處上的不適應，提供安全的住宿空間。</p>
+						</div>
+					</div>	
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-des-12 hotelRes">
+					<a href="hotel_reservation.html">立即預約</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section class="productPart">
+		<div class="container_960">
+			<div class="col-des-12 col-mob-12 productTitle">
+				<h1>
+					<a href="allProduct.html">寵 物 <span> 商 </span> <span> 品 </span></a>
+				</h1>
+			</div>
+			<div class="col-des-6 productPic">
+				<div class="enviBorder">
+						<img src="./image/shop9.jpg" alt="線上購物" title="線上購物">
+				</div>
+			</div>
+			<div class="col-des-6 productTxt">
+				<p class="mob_hidden">萌舒樂提供眾多萌寶貝的商品線上選購，包含健康飼料、零食、外出工具、寵物床、食器、服飾等，讓萌寶貝的爸爸媽媽不用出門，就可以在家輕鬆下單選購呦！</p>
+				<p class="mob_hidden">萌舒樂提供多種付款方式，包含信用卡分期付款、線上轉帳、ATM匯款及現金付款，並有宅配到府、超商取貨、或者至門市取貨等方式取得商品。</p>
+				<p class="des_hidden">萌舒樂提供眾多商品線上選購，包含健康飼料、零食、外出工具、寵物床、食器、服飾等，並提供多種付款方式，含信用卡分期付款、線上轉帳、ATM匯款及現金付款等，另可宅配到府、超商取貨、或者至門市取貨。</p>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			<div class="col-des-4 col-mob-6 proItem">
+				<a href="productDetail.html">
+					<img src="./image/product1.jpg">
+					<h3>Hagen</h3>
+					<p>毛孩淘寶飼料球-藍色</p>
+					<span>$213</span>
+				</a>			
+			</div>
+			<div class="col-des-4  col-mob-6 proItem">
+				<a href="#">
+					<img src="./image/product5.jpg">
+					<h3>WELLNESS</h3>
+					<p>貓咪無穀深海魚食譜2磅</p>
+					<span>$600</span>
+				</a>
+				
+				<!-- <i class="fa fa-cart-plus" aria-hidden="true"></i>	 -->
+			</div>
+			<div class="col-des-4 col-mob-6 proItem">
+				<a href="#">
+					<img src="./image/product4.jpg">
+					<h3>紐崔斯</h3>
+					<p>幼犬雞肉+糙米2公斤</p>
+					<span>$711</span>
+				</a>
+			</div>
+			<!-- <div class="clearfix"></div>	 -->
+			<div class="col-des-4 col-mob-6 proItem">
+				<a href="#">
+					<img src="./image/product6.jpg">
+					<h3>AIM CREATE</h3>
+					<p>組合鈴鐺帶球貓抓板</p>
+					<span>$792</span>
+				</a>
+			</div>	
+			<div class="col-des-4 col-mob-6 proItem">
+				<a href="#">
+					<img src="./image/product3.jpg">
+					<h3>優格</h3>
+					<p>幼犬配方羊肉+米7公斤</p>
+					<span>$961</span>
+				</a>
+			</div>
+			<div class="col-des-4 col-mob-6 proItem">
+				<a href="#">
+					<img src="./image/product9.jpg">
+					<h3>PUBT</h3>
+					<p>寵物箱機車專用-黃色</p>
+					<span>$4613</span>
+				</a>
+			</div>	
+			<div class="col-des-4 col-mob-6 proItem mob_hidden">
+				<a href="#">
+					<img src="./image/product8.jpg">
+					<h3>LOVE DOG</h3>
+					<p>小型犬自動伸縮牽繩-粉紅色</p>
+					<span>$360</span>
+				</a>
+			</div>
+			<div class="col-des-4 col-mob-6 proItem mob_hidden">
+				<a href="#">
+					<img src="./image/product7.jpg">
+					<h3>VUUM</h3>
+					<p>攜帶式寵物箱L-咖啡色</p>
+					<span>$8800</span>
+				</a>
+			</div>
+			<div class="col-des-4 col-mob-6 proItem mob_hidden">
+				<a href="#">
+					<img src="./image/product6.jpg">
+					<h3>LOVE CAT</h3>
+					<p>組合式鈴鐺帶球貓抓板</p>
+					<span>$390</span>	
+				</a>
+			</div>				
+			<div class="clearfix"></div>
+			<div class="col-des-12 col-mob-12 proBtn">
+				<a href="allProduct.html">更多商品</a>
+			</div>
+		 </div>
+		 <div class="clearfix"></div>
+	</section>
+
+
+
+
+	<section class="shopPart">
+		<div class="container_960">
+			<div class="col-des-12 col-mob-12 shopTitle">
+				<h1>
+					<a href="#">門 市 <span> 資 </span> <span> 訊 </span></a>
+				</h1>
+			</div>
+			<div class="col-des-6 col-mob-12 shopPic">
+				<div class="enviBorder">
+					<img src="./image/shopCoffee.jpeg" alt="咖啡照片" title="咖啡照片">
+				</div>
+				
+			</div>
+			<div class="col-des-6 col-mob-12 shopTxt">
+				<p class="mob_hidden">萌舒樂寵物美容咖啡廳目前有三家門市，分別位於台北市、新北市及台中市，提供寵物美容、旅館、商品、咖啡廳等服務。每一間門市皆為兩層樓的建築，其各自有不同主題的佈置風格。一樓規劃為萌寶貝美容與咖啡廳的主要空間，二樓則為貓寶貝與狗寶貝的住宿空間。</p>
+				<p class="mob_hidden">未來已陸續規劃在各縣市開設門市，期待能提供最專業的寵物相關服務，造福萌寶貝與爸爸媽媽們喔！</p>
+				<p class="des_hidden">萌舒樂寵物美容咖啡廳目前有三家門市，位於台北市、新北市及台中市，提供美容、旅館、商品、咖啡廳等服務。</p>
+				<p class="des_hidden">每一間門市皆為兩層樓的建築，其各自有不同主題的佈置風格。一樓為美容與咖啡廳，二樓為貓與狗寶貝的住宿空間，期許提供最專業的寵物相關服務，造福萌寶貝與爸爸媽媽們喔！</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-des-4 col-mob-12 shopItem">
+				<div class="eachShop">
+					<a href="#">
+						<figure>
+							<img src="./image/taipei.jpg" alt="">
+						</figure>
+						<figcaption>─  台北門市  ─</figcaption>
+						<ul>
+							
+							<li><i class="fa fa-star" aria-hidden="true"></i>營業證號：台北特寵業字第1234號</li>
+							
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> 門市地址：台北市大安區中大路300號</li>
+							
+							<li><i class="fa fa-phone" aria-hidden="true"></i>預約電話：02-1234-0000</li>
+							
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i>營業時間：09:00 AM - 10:00 PM</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<div class="col-des-4 col-mob-12 shopItem">
+				<div class="eachShop">
+					<a href="#">
+						<figure>
+							<img src="./image/newTaipei.jpg" alt="">
+						</figure>
+						<figcaption>─  新北門市  ─</figcaption>
+						<ul>
+							
+							<li><i class="fa fa-star" aria-hidden="true"></i>營業證號：新北特寵業字第1234號</li>
+							
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> 門市地址：新北市大安區中大路300號</li>
+							
+							<li><i class="fa fa-phone" aria-hidden="true"></i>預約電話：02-1234-0000</li>
+							
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i>營業時間：09:00 AM - 10:00 PM</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<div class="col-des-4 col-mob-12 shopItem">
+				<div class="eachShop">
+					<a href="#">
+						<figure>
+							<img src="./image/taichung.jpg" alt="">
+						</figure>
+						<figcaption>─  台中門市  ─</figcaption>
+						<ul>
+							
+							<li><i class="fa fa-star" aria-hidden="true"></i>營業證號：台中特寵業字第1234號</li>
+							
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> 門市地址：台中市大安區中大路300號</li>
+							
+							<li><i class="fa fa-phone" aria-hidden="true"></i>預約電話：04-1234-0000</li>
+							
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i>營業時間：09:00 AM - 10:00 PM</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="col-des-12 col-mob-12 footerAdd">
+			<a href="#">
+				<img src="./image/EngLogo.png">
+			</a>
+			
+				<h2><a href="index.html">萌舒樂寵物美容咖啡廳</a></h2>
+			
+<!-- 			<p>台北門市｜ 台北市大安區中大路300號｜ 02-1234-0000</p>
+			<p>新北門市｜ 新北市大安區中大路300號｜ 02-1234-0000</p>
+			<p>台中門市｜ 台中市大安區中大路300號｜ 04-1234-0000</p> -->
+		</div>
+		<div class="clearfix"></div>
+		<div>
+			<div class="col-des-6 footerNav">
+				<ul>
+					<li><a href="grooming.html">寵物美容</a></li>
+					<li><a href="hotelEnvi.html">寵物旅館</a></li>
+					<li><a href="allProduct.html">寵物商品</a></li>
+					<li><a href="coffeeShop.html">門市資訊</a></li>
+					<!-- <li><a href="#">最新資訊</a></li> -->
+					</ul>
+			</div>
+			<div class="col-des-6 privacy">
+				<ul>
+					<li><a href="#">網站使用條款</a></li>
+					<li><a href="#">隱私權政策</a></li>
+					<li> ©2017 Mong Sulo All Rights Reserved.</li>
+					</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+
+
+
+
+
+	
+
+	
+
+	
+	
+	
+
+</body>
+</html>
